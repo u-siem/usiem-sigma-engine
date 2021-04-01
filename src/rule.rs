@@ -167,9 +167,9 @@ pub enum SigmaRuleDetection {
 pub enum SigmaValues {
     Text(Option<String>),
     Int(i32),
-    Array(Box<SigmaValues>),
-    
+    Array(Vec<SigmaValues>),
 }
+
 
 
 #[cfg(test)]

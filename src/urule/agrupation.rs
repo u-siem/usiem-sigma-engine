@@ -5,7 +5,7 @@ use lazy_static::lazy_static;
 lazy_static! {
     static ref RE_AGR: Regex = Regex::new("\\s(count|avg|max|min|sum)(?:\\(([^\\)]*)\\))?\\s+by\\s+([^\\s]+)").unwrap();
 }
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum SigmaAgrupation {
     // Count agruped by a parameter
     Count(String),
