@@ -13,7 +13,7 @@ use matches::*;
 pub struct SiemSigmaRule {
     rule: Arc<SigmaRule>,
     agrupation: SigmaAgrupation,
-    conditions: BTreeMap<String, Option<bool>>,
+    conditions: BTreeMap<String, Option<bool>>
 }
 impl Clone for SiemSigmaRule {
     // Clone before using with a log
